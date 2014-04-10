@@ -13,7 +13,7 @@ public class test {
 
 
 	/**
-	 * Es wird ein geheimes Alphabet erstellt und dann wird es mittels equale vergleichen ob das selbe Alphabet 
+	 * Es wird ein geheimes Alphabet erstellt und dann wird es mittels equale vergliechen ob das selbe Alphabet 
 	 * zurück gegeben wird.
 	 */
 	@Test
@@ -41,23 +41,5 @@ public class test {
 		SubstitutionCipher su = new SubstitutionCipher("abcdefghijklmnopqrstuvwxyzäöüß");
 		su.setSecretAlphabet("qwer");
 	}
-	/**
-	 * Diese Test verschlüsselt das Wort "Hallo ich bins"
-	 */
-	@Test
-	public void test4(){
-		SubstitutionCipher su = new SubstitutionCipher("qwertzuiopüßasdfghjklöäyxcvbnm");
-		su.decrypt("Hallo ich bins");
-		System.out.println(su.decrypt("Hallo ich bins"));
-	}
-	/**
-	 * Diese Test entschlüsseln das Wort was oben raus kommt.
-	 */
-	@Test
-	public void test5(){
-		SubstitutionCipher su = new SubstitutionCipher("qwertzuiopüßasdfghjklöäyxcvbnm");
-		su.encrypt("rmuui hzr öhün");
-		System.out.println(su.encrypt("rmuui hzr öhün"));
-		
-	}
-}	
+	
+}
